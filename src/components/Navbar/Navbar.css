@@ -1,0 +1,67 @@
+.navbar{
+   
+    display:flex;
+    justify-content: space-around;
+    padding: 20px;
+    box-shadow:0 1px 3px -2px black ;
+}
+
+.nav-logo{
+display:flex;
+gap:10px;
+align-items: center;
+
+}
+.nav-logo p{
+    font-size: 30px;
+    font-size: 600;
+}
+
+.nav-menu{
+    display: flex;
+    gap:50px;
+    align-items:center;
+    list-style-type: none;
+    font-size:20px;
+    font-weight: 500;
+    color: gray;
+}
+.nav-menu li{
+    margin-bottom: 0;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    display: flex;
+    align-items:center;
+   
+    cursor:pointer;
+}
+.nav-menu hr{
+    width:80%;
+    height:2px;
+    border-radius: 10px;
+    background: orange;
+
+}
+.nav-login-cart button{
+    width:150px;
+    height:50px;
+    border:1px solid gray;
+    border-radius: 75px;
+    font-size: 15px;
+    font-weight:500;
+    background-color: white;
+    cursor:pointer;
+
+}
+.nav-login-cart button:active{
+    background-color:green;
+}
+.nav-cart-count{
+    width:22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    
+}
