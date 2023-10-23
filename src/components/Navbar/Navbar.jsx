@@ -26,6 +26,7 @@ function Navbar() {
                     Kids
                     
                 </li>
+                
             </ul>
             <div className="nav-login-cart">
                 <button>Login</button>
