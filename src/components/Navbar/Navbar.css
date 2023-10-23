@@ -52,7 +52,7 @@ align-items: center;
     font-size: 15px;
     font-weight:500;
     background-color: white;
-    cursor:pointer;
+    cursor:pointer
 
 }
 .nav-login-cart button:active{
