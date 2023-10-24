@@ -16,7 +16,7 @@ function Navbar() {
             </div>
             <ul className="nav-menu">
                 <li onClick={()=>setMenu("shop")}>
-                    Women{menu === "shop"? <hr /> : <></>}
+                    Shop{menu === "shop"? <hr /> : <></>}
                 </li>
                 <li onClick={()=>setMenu("women")}>
                     Women{menu === "women"? <hr /> : <></>}
