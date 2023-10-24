@@ -22,7 +22,7 @@ function Navbar() {
                     Women{menu === "women"? <hr /> : <></>}
                 </li>
                 <li onClick={()=>setMenu("men")}>
-                    Kids{menu === "men" ? <hr /> : <></>}
+                    Kids{menu === "men"? <hr /> : <></>}
                 </li>
                 <li onClick={()=>setMenu("kids")}>
                     Men{menu === "kids" ? <hr /> : <></>}
