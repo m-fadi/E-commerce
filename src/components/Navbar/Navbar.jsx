@@ -25,7 +25,7 @@ function Navbar() {
                     Kids{menu === "men"? <hr /> : <></>}
                 </li>
                 <li onClick={()=>setMenu("kids")}>
-                    Men{menu === "kids" ? <hr /> : <></>}
+                    Men{menu === "kids"? <hr /> : <></>}
                 </li>
             </ul>
             <div className="nav-login-cart">
