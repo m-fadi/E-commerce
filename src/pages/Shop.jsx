@@ -1,9 +1,11 @@
-import all_products from '../components/assest/images/all_product'
+import Hero from '../components/Hero/Hero'
 
 function Shop() {
 
 
-  return <div>shop</div>;
+  return <div>
+    <Hero/>
+  </div>;
 }
 
 export default Shop
