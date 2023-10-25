@@ -1,6 +1,6 @@
 import "./Hero.css";
-import hand_icon from "../assest/images/hand_icon.png"
-import hero_image from "../assest/images/hero_image.png"
+import hand_icon from "../assest/images/hand_icon.png";
+import hero_image from "../assest/images/hero_image.png";
 import arrow_icon from "../assest/images/arrow.png";
 
 function Hero() {
