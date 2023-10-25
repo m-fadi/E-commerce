@@ -23,7 +23,7 @@ function Navbar() {
                     {menu === "shop" ? <hr /> : <></>}
                 </li>
                 <li onClick={() => setMenu("women")}>
-                    <Link style={{ textDecoration: "none" }} to="/womenn">
+                    <Link style={{ textDecoration: "none" }} to="/women">
                         {" "}
                         Women
                     </Link>
