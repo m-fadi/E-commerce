@@ -6,7 +6,7 @@ import NewCollections from '../components/New_collections/NewCollections';
 function Shop() {
 console.log(Hero)
 
-  return <div>
+  return <div className='container'>
     <Hero/>
     <Popular/>
     <Offer/>
