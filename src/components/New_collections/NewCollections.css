@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    overflow-x: hidden;
+    box-sizing: border-box;
     gap: 10px;
     height: 90vh;
     
@@ -22,7 +22,7 @@ font-weight: 500;
 
 .new-collections-item{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr  ;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     margin-top:50px;
     
     gap:50px;
