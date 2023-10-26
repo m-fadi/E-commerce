@@ -20,9 +20,12 @@ font-weight: 500;
     background: #252525;
 }
 .popular-item{
-    display:grid;
+    /* display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     margin-top:50px;
     
+    gap:50px; */
+     margin-top:50px;
+    display: flex;
     gap:50px;
 }
