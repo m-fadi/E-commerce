@@ -1,0 +1,31 @@
+.offer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left-banner h2 {
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+}
+.check-now-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 170px;
+    height: 40px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff4141;
+    font-weight: 500;
+    color: white;
+    font-size: 13px;
+}
+.check-now-btn img{
+    height:7px;
+}
+.left-banner p{
+    font-size:13px;
+   color: gray;
+}
