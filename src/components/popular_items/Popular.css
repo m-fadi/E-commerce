@@ -21,7 +21,7 @@ font-weight: 500;
 }
 .popular-item{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns:  repeat(4, 1fr);
     margin-top:50px;
     
     gap:50px;
