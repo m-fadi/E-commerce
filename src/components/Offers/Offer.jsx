@@ -1,5 +1,5 @@
 import './Offer.css'
-import React from 'react'
+import exclusive_image from "../assest/images/exclusive_image.png" 
 
 function Offer() {
   return (
@@ -11,7 +11,7 @@ function Offer() {
             <div className="check-now">Check Now</div>
         </div>
         <div className="right-banner">
-            <img src="" alt="" />
+            <img src={exclusive_image} alt="" />
         </div>
     </div>
   )
