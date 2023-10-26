@@ -1,6 +1,7 @@
 import Hero from '../components/Hero/Hero'
 import Popular from '../components/popular_items/Popular';
 import Offer from '../components/Offers/Offer';
+import NewCollections from '../components/New_collections/NewCollections';
 
 function Shop() {
 console.log(Hero)
@@ -9,6 +10,7 @@ console.log(Hero)
     <Hero/>
     <Popular/>
     <Offer/>
+    <NewCollections/>
   </div>;
 }
 
