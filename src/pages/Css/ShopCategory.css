@@ -1,0 +1,22 @@
+
+
+.filtered{
+display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing:border-box;
+    gap: 10px;
+    margin-bottom: 150px;
+    
+}
+
+.filtered-items{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    margin-top:50px;
+    
+    gap:50px;
+    
+    
+    
+}
