@@ -5,6 +5,7 @@ import LoginSignUp from "./pages/LoginSignUp";
 import Cart from "./pages/Cart";
 import Product from "./pages/Product";
 import ShopCategory from "./pages/ShopCategory";
+import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
     return (
@@ -12,7 +13,7 @@ function App() {
             <BrowserRouter>
                 <Navbar />
                 <Routes>
-                    <Route path="/" element={<Shop/>} />
+                    <Route path="/" element={<Shop />} />
                     <Route
                         path="/men"
                         element={<ShopCategory category="men" />}
@@ -31,6 +32,7 @@ function App() {
                     <Route path="/cart" element={<Cart />} />
                     <Route path="/login" element={<LoginSignUp />} />
                 </Routes>
+                <Footer />
             </BrowserRouter>
         </div>
     );
