@@ -1,0 +1,27 @@
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:30px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.information {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+.social-media {
+    display:flex;
+    gap: 30px;
+    height: 25px;
+    margin-bottom: 20px;
+
+}
