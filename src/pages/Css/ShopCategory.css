@@ -1,6 +1,19 @@
+.shop-container{
+    
+}
+.shop-offer-banner{
+    display:block;
+    margin:30px auto;
+    width:85%
+}
+.shop-count{
+ display: flex;
+ margin:0px 100px;
+ justify-content:space-between;
+ align-items:center
+}
 
-
-.filtered{
+filtered{
 display: flex;
     align-items: center;
     flex-direction: column;
@@ -14,8 +27,8 @@ display: flex;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     margin-top:50px;
-    
-    gap:50px;
+    margin:20px 100px;
+    row-gap:80px;
     
     
     
