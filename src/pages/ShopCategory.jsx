@@ -3,7 +3,9 @@ import React from 'react'
 function ShopCategory(props) {
   console.log(props)
   return (
-    <div >ShopCategory</div>
+    <div >
+      <img src={props.specialOffer} alt="" />
+    </div>
   )
 }
 
