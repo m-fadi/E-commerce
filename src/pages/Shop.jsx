@@ -3,6 +3,7 @@ import Popular from '../components/popular_items/Popular';
 import Offer from '../components/Offers/Offer';
 import NewCollections from '../components/New_collections/NewCollections';
 import NewsLetter from '../components/NewsLetter/NewsLetter';
+import Footer from '../components/Footer/Footer';
 
 function Shop() {
 console.log(Hero)
@@ -13,6 +14,7 @@ console.log(Hero)
     <Offer/>
     <NewCollections/>
     <NewsLetter/>
+    <Footer/>
   </div>;
 }
 
