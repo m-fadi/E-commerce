@@ -40,7 +40,7 @@ function App() {
                         element={
                             <ShopCategory
                                 specialOffer={specialOffer_kids}
-                                category="kids"
+                                category="kid"
                             />
                         }
                     />
