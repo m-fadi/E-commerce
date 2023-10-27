@@ -6,7 +6,7 @@ import NewsLetter from '../components/NewsLetter/NewsLetter';
 
 
 function Shop() {
-console.log(Hero)
+
 
   return <div >
     <Hero/>
