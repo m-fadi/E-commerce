@@ -1,6 +1,7 @@
 import React from 'react'
 
-function ShopCategory() {
+function ShopCategory(props) {
+  console.log(props)
   return (
     <div >ShopCategory</div>
   )
