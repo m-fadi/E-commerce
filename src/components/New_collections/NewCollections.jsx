@@ -6,7 +6,7 @@ function NewCollections() {
         return <div> <Item key={item.id} item={item}/></div>
     })
   return (
-      <div class="new-collections">
+      <div className="new-collections">
           <h1> NEW COLLECTIONS</h1>
           <hr />
           <div className="new-collections-item"> {newCollections}</div>
