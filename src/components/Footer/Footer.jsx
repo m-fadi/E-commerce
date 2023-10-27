@@ -7,27 +7,35 @@ import instagram_icon from "../assest/images/instagram_icon.png";
 function Footer() {
     return (
         <footer>
-            <footer>
-                <div className="logo">
+            
+                <div className="footer-logo">
                     <img src={logo} alt="" />
                     <h1>SHOPER</h1>
                 </div>
-                <ul className="information">
+                <ul className="footer-links">
                     <li>Company</li>
-
                     <li>Product</li>
                     <li>Office</li>
                     <li>about</li>
                     <li>Contact</li>
                 </ul>
-                <div className="social-media">
-                    <img src={whatsapp_icon} alt="" />
-                    <img src={instagram_icon} alt="" />
-                    <img src={pinter_icon} alt="" />
+                <div className="social-media-icons">
+                    <div className="icon-container">
+                        <img src={whatsapp_icon} alt="" />
+                    </div>
+                    <div className="icon-container">
+                        <img src={instagram_icon} alt="" />
+                    </div>
+                    <div className="icon-container">
+                        <img src={pinter_icon} alt="" />
+                    </div>
                 </div>
-                <p> copyright @2023 - All Rights Reserved</p>
+                <div className="footer-copyright">
+                    <hr />
+                    <p> copyright @2023 - All Rights Reserved</p>
+                </div>
             </footer>
-        </footer>
+       
     );
 }
 
