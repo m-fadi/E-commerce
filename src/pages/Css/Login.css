@@ -1,0 +1,68 @@
+.login{ 
+   
+    background:#fce3fe;
+    padding: 100px 140px;
+    margin-bottom: 150px;
+    height:70vh;
+    /* background: linear-gradient(180deg, #dea7e2, #15355f22 60%); */
+}
+
+.login-container{
+    display:flex;
+    flex-direction: column;
+    gap :20px;
+   width:30%;
+   height:60vh;
+   background:white;
+   margin: auto;
+   padding:40px 60px;
+     
+    /*
+    width: 20%;
+    height:20rem;
+     margin: 150px;
+    padding: 0px 140px;
+    background:white; */
+}
+.login-container h1{
+margin:20px 0px;
+
+}
+
+.login-fields{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin-top: 30px;
+
+}
+.login-fields input{
+    height:40px;
+    width: 100%;
+    padding:0 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+    
+    
+} 
+ .createAccount{
+    display:flex;
+
+}
+
+.login-btn{
+padding:5px 70px;
+width:80%;
+display:flex;
+align-items:center;
+justify-content:center ;
+border:none;
+background:#ff4141;
+font-size:20px ;
+cursor: pointer;
+font-weight: 500;
+
+}
+
