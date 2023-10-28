@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+//import React, { useContext } from "react";
 import "./Css/ShopCategory.css";
-import { ShopContext } from "../Context/ShopContext";
+//import { ShopContext } from "../Context/ShopContext";
 import all_products from "../components/assest/images/all_product";
 import Item from "../components/Items/Item";
 
