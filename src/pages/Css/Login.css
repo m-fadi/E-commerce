@@ -11,7 +11,7 @@
     display:flex;
     flex-direction: column;
     gap :20px;
-   width:30%;
+   width:40%;
    height:60vh;
    background:white;
    margin: auto;
@@ -47,10 +47,7 @@ margin:20px 0px;
     
     
 } 
- .createAccount{
-    display:flex;
-
-}
+ 
 
 .login-btn{
 padding:5px 70px;
@@ -64,5 +61,28 @@ font-size:20px ;
 cursor: pointer;
 font-weight: 500;
 
+}
+.create-account p{
+    margin-top: 20px;
+    color:#5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+}
+.create-account a{
+    color: #ff4141;
+    font-weight: 600;
+    text-decoration: none;
+}
+.agree-box{
+    display:flex;
+   
+    align-items:center;
+    margin-top: 25px;
+    gap:25px;
+    color:#5c5c5c;
+    font-size:18px;
+    font-weight: 500;
+
+    
 }
 
