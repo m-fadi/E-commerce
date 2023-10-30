@@ -11,7 +11,7 @@ function Product() {
     const product = all_products.filter(
         (item) => item.id === Number(productId)
     );
-    console.log(product);
+    
 
     return (
         <div>
@@ -35,7 +35,7 @@ function Product() {
                 </Link>{" "}
                 <img src={breadcrum_arrow} /> {product[0].name}
             </div>
-            <DisplayProduct productId={productId} />
+            <DisplayProduct product={product} />
         </div>
     );
 }
