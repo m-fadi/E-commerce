@@ -1,15 +1,15 @@
 import {useParams} from 'react-router-dom'
-import all_products from '../components/assest/images/all_product'
+import DisplayProduct from "../components/DisplayProduct/DisplayProduct";
 function Product() {
   const {productId}= useParams()
+  console.log(useParams())
   
-  const product=all_products.filter(item => item.id === Number(productId))
-  console.log(product[0])
+  
   return (
-    <div>
-      <img src={product[0].image} alt="" />
-    </div>
-  )
+      <div>
+          <DisplayProduct productId={productId}/>
+      </div>
+  );
 }
 
 export default Product
