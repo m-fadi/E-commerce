@@ -1,15 +1,20 @@
 import all_products from "../assest/images/all_product";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function DisplayProduct(props) {
-    const product = all_products.filter(
-        (item) => item.id === Number(props.productId)
-    );
+    const {product }= props
+    
     return (
         <div className="container">
-            
             <div className="left-side">
-
-                <img src={product[0].image} alt="" />
+                <div className="img-list">
+                    <img src={product[0].image} alt="" />
+                    <img src={product[0].image} alt="" />
+                    <img src={product[0].image} alt="" />
+                    <img src={product[0].image} alt="" />
+                </div>
+                <div className="display-img">
+                    <img className="main-img" src={product[0].image} alt="" />
+                </div>
             </div>
         </div>
     );
