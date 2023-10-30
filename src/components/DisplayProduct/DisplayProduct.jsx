@@ -1,5 +1,5 @@
 import all_products from "../assest/images/all_product";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function DisplayProduct(props) {
     const product = all_products.filter(
         (item) => item.id === Number(props.productId)
@@ -7,7 +7,7 @@ function DisplayProduct(props) {
     return (
         <div className="container">
             
-            <div className="left-si">
+            <div className="left-side">
 
                 <img src={product[0].image} alt="" />
             </div>
