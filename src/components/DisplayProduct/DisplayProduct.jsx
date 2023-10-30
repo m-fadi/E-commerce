@@ -11,4 +11,4 @@ function DisplayProduct(props) {
     );
 }
 
-export default DisplayProduct;
+export default DisplayProduct
