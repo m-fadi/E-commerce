@@ -6,7 +6,7 @@ function DisplayProduct(props) {
     );
     return (
         <div>
-            <img src={product[0].image} alt="" />;
+            <img src={product[0].image} alt="" />
         </div>
     );
 }
