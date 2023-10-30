@@ -5,8 +5,12 @@ function DisplayProduct(props) {
         (item) => item.id === Number(props.productId)
     );
     return (
-        <div>
-            <img src={product[0].image} alt="" />
+        <div className="container">
+            
+            <div className="left-si">
+
+                <img src={product[0].image} alt="" />
+            </div>
         </div>
     );
 }
