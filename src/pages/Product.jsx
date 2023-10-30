@@ -16,7 +16,11 @@ function Product() {
     return (
         <div>
             <div className="location">
-                HOME <img src={breadcrum_arrow} />{" "}
+                <Link style={{ textDecoration: "none" }} to="/">
+                    {" "}
+                    HOME
+                </Link>{" "}
+                <img src={breadcrum_arrow} />{" "}
                 <Link style={{ textDecoration: "none" }} to="/">
                     {" "}
                     Shop
