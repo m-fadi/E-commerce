@@ -1,4 +1,4 @@
-//import React, { useContext } from "react";
+
 import "./Css/ShopCategory.css";
 //import { ShopContext } from "../Context/ShopContext";
 import all_products from "../components/assest/images/all_product";
@@ -11,7 +11,11 @@ function ShopCategory(props) {
             if (item.category === category) return item;
             else return null;
         })
-        .map((item) => <Item item={item} />);
+        .map((item) => (
+             
+                <Item item={item} />
+            
+        ));
     
     return (
         <div className="shop-container">
