@@ -1,7 +1,8 @@
 import "./Item.css";
-import React, { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 function Item(props) {
     let { item } = props;
+    
    
     return (
         <div className="item">
