@@ -2,12 +2,12 @@ import "./Item.css";
 import { Link } from "react-router-dom";
 function Item(props) {
     let { item } = props;
-    
+    console.log(item)
    
     return (
         <div className="item">
             <Link to={`/Product/${item.id}`}>
-                <img src={item.image} alt="" />
+                <img onClick={window.scrollTo(0,0)} src={item.image} alt="" />
             </Link>
 
             <p> {item.name}</p>
