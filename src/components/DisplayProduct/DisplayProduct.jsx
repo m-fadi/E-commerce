@@ -49,6 +49,7 @@ function DisplayProduct(props) {
                     <button className="add-cart-btn">ADD TO CART</button>
                 </div>
             </div>
+            
         </div>
     );
 }
