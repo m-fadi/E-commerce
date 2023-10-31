@@ -17,7 +17,7 @@ function Product() {
         <div>
             <div className="location">
                 <Link style={{ textDecoration: "none" }} to="/">
-                    {" "}
+                    {" "} 
                     HOME
                 </Link>{" "}
                 <img src={breadcrum_arrow} />{" "}
