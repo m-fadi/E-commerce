@@ -1,0 +1,45 @@
+.container{
+    display:flex;
+    margin:0 170px;
+}
+.left-side{
+    display:flex;
+    gap:20px;
+}
+.img-list{
+    display:flex;
+    flex-direction: column;
+    gap:20px
+    
+}
+.img-list img{
+    height:160px;
+}
+.main-img{
+    width:586px;
+    height:700px;
+}
+.right-side{
+    height: auto;
+    font-size: 13px;
+}
+
+.prices{
+display:flex;
+gap:20px;
+
+}
+.price-new{
+    color:#374151;
+    font-size: 18px;
+    font-family: 600;
+}
+.price-old{
+    color:#8c8c8c;
+    font-size: 18px;
+    font-family: 500;
+    text-decoration: line-through;
+}
+.sizes{
+    display: flex;
+}
