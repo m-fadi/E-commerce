@@ -5,10 +5,10 @@ function ProductDescription() {
     return (
         <div className="description-container">
             <div className="descriptionBox-navigator">
-                <div className="description"> Description</div>
-                <div className="description reviews"> Reviews (89)</div>
+                <div className="description-title"> Description</div>
+                <div className="description-title reviews-title"> Reviews (89)</div>
             </div>
-            <div className="about">
+            <div className="description">
                 <p>
                     {" "}
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
