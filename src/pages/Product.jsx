@@ -35,7 +35,7 @@ function Product() {
                 </Link>{" "}
                 <img src={breadcrum_arrow} /> {product[0].name}
             </div>
-            <DisplayProduct product={product} />
+            <DisplayProduct product={product[0]} />
         </div>
     );
 }
