@@ -2,6 +2,7 @@ import "./Css/Product.css";
 import { useParams } from "react-router-dom";
 import DisplayProduct from "../components/DisplayProduct/DisplayProduct";
 import all_products from "../components/assest/images/all_product";
+import ProductDescription from "../components/ProductDescription/ProductDescription"
 import { Link } from "react-router-dom";
 
 import breadcrum_arrow from "../components/assest/images/breadcrum_arrow.png";
@@ -16,7 +17,7 @@ function Product() {
     return (
         <div>
             <div className="location">
-                <Link style={{ textDecoration: "none",  }} to="/">
+                <Link style={{ textDecoration: "none" }} to="/">
                     {" "}
                     HOME
                 </Link>{" "}
@@ -36,6 +37,7 @@ function Product() {
                 <img src={breadcrum_arrow} alt="" /> {product[0].name}
             </div>
             <DisplayProduct product={product[0]} />
+            <ProductDescription  />
         </div>
     );
 }
