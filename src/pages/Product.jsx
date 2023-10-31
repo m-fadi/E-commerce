@@ -17,15 +17,15 @@ function Product() {
         <div>
             <div className="location">
                 <Link style={{ textDecoration: "none" }} to="/">
-                    {" "} 
+                    {" "}
                     HOME
                 </Link>{" "}
-                <img src={breadcrum_arrow} />{" "}
+                <img src={breadcrum_arrow} alt="" />{" "}
                 <Link style={{ textDecoration: "none" }} to="/">
                     {" "}
                     Shop
                 </Link>{" "}
-                <img src={breadcrum_arrow} />{" "}
+                <img src={breadcrum_arrow} alt="" />{" "}
                 <Link
                     style={{ textDecoration: "none" }}
                     to={`/${product[0].category}`}
@@ -33,7 +33,7 @@ function Product() {
                     {" "}
                     {product[0].category.toLocaleUpperCase()}
                 </Link>{" "}
-                <img src={breadcrum_arrow} /> {product[0].name}
+                <img src={breadcrum_arrow} alt="" /> {product[0].name}
             </div>
             <DisplayProduct product={product[0]} />
         </div>
