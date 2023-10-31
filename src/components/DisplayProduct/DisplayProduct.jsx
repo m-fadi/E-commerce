@@ -27,27 +27,26 @@ function DisplayProduct(props) {
                     <img src={star_icon} alt="" />
                     <img src={star_dull_icon} alt="" />
                     <p>(13)</p>
-                    <div className="prices">
-                        <div className="price-old">{product.old_price} $</div>
-                        <div className="price-new">{product.new_price} $</div>
+                </div>
+                <div className="prices">
+                    <div className="price-old">{product.old_price} $</div>
+                    <div className="price-new">{product.new_price} $</div>
+                </div>
+                <div className="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero vitae minima reprehenderit ab sit facilis neque odio
+                    possimus temporibus obcaecati!
+                </div>
+                <div className="product-size">
+                    <h1> Select Size</h1>
+                    <div className="sizes">
+                        <div>S</div>
+                        <div>M</div>
+                        <div>L</div>
+                        <div>XL</div>
+                        <div>XXL</div>
                     </div>
-                    <div className="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Libero vitae minima reprehenderit ab sit facilis neque
-                        odio possimus temporibus obcaecati!
-                    </div>
-                    <div className="product-size">
-                        <h1> Select Size</h1>
-                        <div className="sizes">
-                            <dir>S</dir>
-                            <dir>M</dir>
-                            <dir>L</dir>
-                            <dir>XL</dir>
-                            <dir>XXL</dir>
-                        </div>
-                        <button>ADD TO CART</button>
-                        <p className="category"></p>
-                    </div>
+                    <button className="add-cart-btn">ADD TO CART</button>
                 </div>
             </div>
         </div>
