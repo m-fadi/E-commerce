@@ -7,7 +7,7 @@ function DisplayProduct(props) {
     const { product } = props;
 
     return (
-        <div className="container">
+        <div className="product-container">
             <div className="left-side">
                 <div className="img-list">
                     <img src={product.image} alt="" />
@@ -32,7 +32,7 @@ function DisplayProduct(props) {
                     <div className="price-old">{product.old_price} $</div>
                     <div className="price-new">{product.new_price} $</div>
                 </div>
-                <div className="description">
+                <div className="product-description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Libero vitae minima reprehenderit ab sit facilis neque odio
                     possimus temporibus obcaecati!
