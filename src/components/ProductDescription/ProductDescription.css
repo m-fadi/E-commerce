@@ -7,7 +7,7 @@
     display:flex;
 
 }
-.description{
+.description-title{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,12 +17,12 @@
     height: 50px;
     border: 1px solid #d0d0d0;
 }
-.reviews{
+.reviews-title{
 background-color: #fbfbfb;
 color:#555;
 
 }
-.about{
+.description{
     display: flex;
     flex-direction: column;
     gap:25px;
