@@ -16,7 +16,7 @@ function Product() {
     return (
         <div>
             <div className="location">
-                <Link style={{ textDecoration: "none" }} to="/">
+                <Link style={{ textDecoration: "none",  }} to="/">
                     {" "}
                     HOME
                 </Link>{" "}
