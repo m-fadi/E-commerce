@@ -9,7 +9,7 @@ import RelatedProducts from "../components/RelatedProducts/RelatedProducts";
 import breadcrum_arrow from "../components/assest/images/breadcrum_arrow.png";
 function Product() {
     const { productId } = useParams();
-   
+  
     const product = all_products.filter(
         (item) => item.id === Number(productId)
     );
