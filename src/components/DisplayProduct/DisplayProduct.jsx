@@ -1,14 +1,13 @@
 import "./DisplayProduct.css";
-import all_products from "../assest/images/all_product";
+import {useContext} from 'react'
 import star_icon from "../assest/images/star_icon.png";
 import star_dull_icon from "../assest/images/star_dull_icon.png";
-import {Link} from 'react-router-dom'
+import { ShopContext }  from "../../Context/ShopContext";
+
 function DisplayProduct(props) {
-    
+    const {addToCart} = useContext(ShopContext)
     const { product } = props;
-const addToCart=()=>{
-    <Link to="/cart"></Link>
-}
+
     return (
         <div className="product-container">
             <div className="left-side">
@@ -49,7 +48,7 @@ const addToCart=()=>{
                         <div>XL</div>
                         <div>XXL</div>
                     </div>
-                    <button onClick={addToCart} className="add-cart-btn">ADD TO CART</button>
+                    <button onClick={()=>addToCart(product.id)} className="add-cart-btn">ADD TO CART</button>
                 </div>
             </div>
             
