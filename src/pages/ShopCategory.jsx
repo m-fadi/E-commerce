@@ -1,10 +1,14 @@
 
 import "./Css/ShopCategory.css";
-//import { ShopContext } from "../Context/ShopContext";
+import { ShopContext } from "../Context/ShopContext";
 import all_products from "../components/assest/images/all_product";
 import Item from "../components/Items/Item";
+import { useContext } from "react";
+
 
 function ShopCategory(props) {
+    const pro=useContext( ShopContext);
+    console.log(pro);
     const { specialOffer, category } = props;
     const filteredItems = all_products
         .filter((item) => {
@@ -13,7 +17,7 @@ function ShopCategory(props) {
         })
         .map((item) => (
              
-                <Item item={item} />
+                <Item item={item} key={item.id} />
             
         ));
     
