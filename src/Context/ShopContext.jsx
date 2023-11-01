@@ -1,25 +1,27 @@
-import React, { createContext,useState } from 'react'
-import all_products from'../components/assest/images/all_product'
+import React, { createContext, useState } from "react";
+import all_products from "../components/assest/images/all_product";
 
-
-export const ShopContext = createContext(null)
-const getDefaultCart= () => {
-    let cart={}
-    for (let index = 0; index < all_products.length+1; index++) {
-        cart[index]=0
-        
+export const ShopContext = createContext(null);
+const getDefaultCart = () => {
+    let cart = {};
+    for (let index = 0; index < all_products.length + 1; index++) {
+        cart[index] = 0;
     }
-    return cart
-}
-const ShopContextProvider=(props)=>{
-    console.log(all_products);
-    const [cartItems, setCartItems] = useState(getDefaultCart())
-    const contextValue= { all_products, cartItems}
-    const addToCart=(itemId)=>setCartItems(prev=>({...prev, [itemId]:prev[itemId]+1}))
+    return cart;
+};
+const ShopContextProvider = (props) => {
+    
+    const [cartItems, setCartItems] = useState(getDefaultCart());
+    const addToCart = (itemId) =>
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+    const remFromCart = (itemId) =>
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+    const contextValue = { all_products, cartItems, addToCart,remFromCart };
+console.log(cartItems)
     return (
         <ShopContext.Provider value={contextValue}>
             {props.children}
         </ShopContext.Provider>
     );
-}
-export default ShopContextProvider 
+};
+export default ShopContextProvider;
