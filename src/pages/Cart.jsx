@@ -1,11 +1,26 @@
 import React,{useContext} from 'react'
 import { ShopContext } from '../Context/ShopContext'
-import Item from '../components/Items/Item'
+import remove_icon from '../components/assest/images/cart_cross_icon.png'
 function Cart() {
   const {cartItems, all_products, remFromCart} = useContext(ShopContext)
   let items=all_products.map(item => {
     if (cartItems[item.id] === 0) return null;
-    else return <Item item={item} key={item.id} />;
+    else return (
+        <div>
+            <div className="cart-items-format">
+                
+                <img src={item.image} alt="" />
+                <p> {item.name}</p>
+                <p> price: {item.new_price} $</p>
+                <button className='cratItems-quantity'>{cartItems[item.id]}</button>
+                <p></p>
+                <img src={remove_icon} alt="" />
+                   
+                </div>
+                <hr/>
+            </div>
+        
+    );
 
     
   })
