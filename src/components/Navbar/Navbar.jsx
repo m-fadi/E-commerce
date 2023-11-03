@@ -3,13 +3,13 @@ import "./Navbar.css";
 import logo from "../assest/images/logo.png";
 import cart_icon from "../assest/images/cart_icon.png";
 import { Link } from "react-router-dom";
-import  { ShopContext } from "../../Context/ShopContext";
+import { ShopContext } from "../../Context/ShopContext";
 function Navbar() {
-    const [menu,setMenu]=useState("shop")
-    const {cartItems}= useContext(ShopContext)
-    console.log(cartItems)
+    const [menu, setMenu] = useState("shop");
+    const { cartItems } = useContext(ShopContext);
+    console.log(cartItems);
     let sum = Object.values(cartItems).reduce((prev, curr) => prev + curr);
-    
+
     return (
         <div className="navbar">
             <div className="nav-logo">
@@ -42,12 +42,13 @@ function Navbar() {
                     <Link style={{ textDecoration: "none" }} to="/kids">
                         {" "}
                         kids
-                    </Link>                    {menu === "kids" ? <hr /> : <></>}
+                    </Link>{" "}
+                    {menu === "kids" ? <hr /> : <></>}
                 </li>
             </ul>
             <div className="nav-login-cart">
                 <Link style={{ textDecoration: "none" }} to="/login">
-                    <button >Login</button>
+                    <button>Login</button>
                 </Link>
 
                 <Link style={{ textDecoration: "none" }} to="/cart">
