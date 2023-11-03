@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import "./Navbar.css";
 import logo from "../assest/images/logo.png";
 import cart_icon from "../assest/images/cart_icon.png";
 import { Link } from "react-router-dom";
+import  { ShopContext } from "../../Context/ShopContext";
 function Navbar() {
     const [menu,setMenu]=useState("shop")
-
-   
-
+    const {cartItems}= useContext(ShopContext)
+    console.log(cartItems)
+    let sum = Object.values(cartItems).reduce((prev, curr) => prev + curr);
+    
     return (
         <div className="navbar">
             <div className="nav-logo">
@@ -52,7 +54,7 @@ function Navbar() {
                 <Link style={{ textDecoration: "none" }} to="/cart">
                     <img src={cart_icon} alt=" cart icon" />{" "}
                 </Link>
-                <div className="nav-cart-count">0</div>
+                <div className="nav-cart-count">{sum}</div>
             </div>
         </div>
     );
