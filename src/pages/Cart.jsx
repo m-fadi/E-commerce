@@ -7,8 +7,7 @@ function Cart() {
   let items=all_products.map(item => {
     if (cartItems[item.id] === 0) return null;
     else return (
-        <div>
-            <div className="cart-items-format">
+        <div>            <div className="cart-items-format">
                 <img src={item.image} alt="" />
                 <p> {item.name}</p>
                 <p> price: {item.new_price} $</p>
