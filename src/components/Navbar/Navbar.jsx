@@ -42,8 +42,7 @@ function Navbar() {
                     <Link style={{ textDecoration: "none" }} to="/kids">
                         {" "}
                         kids
-                    </Link>
-                    {menu === "kids" ? <hr /> : <></>}
+                    </Link>                    {menu === "kids" ? <hr /> : <></>}
                 </li>
             </ul>
             <div className="nav-login-cart">
