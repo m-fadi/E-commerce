@@ -50,12 +50,12 @@ function Cart() {
             );
     });
 
-    // //let sum = items.reduce((prev, curr) => prev + curr);
+   let sum = items.reduce((prev, curr) => prev + curr);
     return (
         <div>
-            {/* {sum === 0 && (
+            {sum === 0 && (
                 <p className="empty-cart">There is no Items in the Cart</p>
-            )} */}
+            )}
             <div>{items}</div>
         </div>
 
