@@ -43,17 +43,15 @@ function CartItem() {
                 </div>
             );
     });
-
-    let items = all_products.map((item) => {
-        if (cartItems[item.id] === 0) return null;
-        else
-            return (
-                <div>
-                    <CartItem />
-                </div>
-            );
-    }); 
-    
+    let sum = items.reduce((prev, curr) => prev + curr);
+    return (
+        <div>
+            {sum === 0 && (
+                <p className="empty-cart">There is no Items in the Cart</p>
+            )}
+            <div>{items}</div>
+        </div>
+    );
 }
 
 export default CartItem;
