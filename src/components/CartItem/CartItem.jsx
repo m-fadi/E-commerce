@@ -70,7 +70,6 @@ function CartItem() {
                         <p className="empty-cart">Your SHOPER Cart is empty.</p>
                     </div>
                 )}
-
                 <div>{items}</div>
                 <hr />
                 <div className="cart-total">
