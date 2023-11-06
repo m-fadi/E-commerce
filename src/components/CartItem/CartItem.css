@@ -8,8 +8,15 @@ font-size: 40px;
 font-weight: 700;
 }
 .cart-item-details{
-    margin : 50px 50px;
+    margin : 50px  50px 0 50;
     display: flex;
     gap:30px;
-    justify-content: center;
+    
+}
+.cart-items-format input{
+    margin : 0 100px;
+    height:30px;
+    font-size: 20px;;
+    width:100px;
+    text-align: center;
 }
