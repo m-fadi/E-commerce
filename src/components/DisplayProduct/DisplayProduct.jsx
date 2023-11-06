@@ -49,7 +49,7 @@ function DisplayProduct(props) {
                         <div>XXL</div>
                     </div>
                     <button
-                        onClick={() => addToCart(product.id)}
+                        onClick={() => addToCart(product.id,1)}
                         className="add-cart-btn"
                     >
                         ADD TO CART
