@@ -9,7 +9,6 @@ function Item(props) {
             <Link to={`/Product/${item.id}`}>
                 <img onClick={window.scrollTo(0,0)} src={item.image} alt="" />
             </Link>
-
             <p> {item.name}</p>
             <div className="item-price">
                 <div className="item-price-old">{item.old_price} $</div>

@@ -59,5 +59,4 @@ console.log(Number(sum))
         </div>
     );
 }
-
 export default Navbar;
