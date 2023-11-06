@@ -14,9 +14,20 @@ font-weight: 700;
     
 }
 .cart-items-format input{
-    margin : 0 100px;
+    margin-left : 100px;
+    margin-right : 10px;
     height:30px;
     font-size: 20px;;
     width:100px;
-    text-align: center;
+    
+}
+.removeProduct-btn{
+     height:35px;
+    
+}
+
+.cart-total{
+    text-align:end;
+    margin-right:100px;
+    margin-top:50px;
 }
