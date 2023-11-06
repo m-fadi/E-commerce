@@ -9,7 +9,7 @@ function CartItem() {
         const [inputValue, setInputValue] = useState(0);
     const handleChange = (id, e) => {
         e===0?  addToCart(id, 1):
-        addToCart(id, e.target.value);
+        addToCart(id,Number( e.target.value));
     };
     useEffect(()=>{
         all_products.map((item) => {
