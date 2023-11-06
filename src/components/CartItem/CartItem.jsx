@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { ShopContext } from "../../Context/ShopContext";
 import "./CartItem.css";
 //import remove_icon from "../";
@@ -6,11 +6,17 @@ import "./CartItem.css";
 function CartItem() {
     const { cartItems, all_products, remFromCart, addToCart } =
         useContext(ShopContext);
-const handleChange=(e) => {
-    console.log(e.target.value)
-}
+    const handleChange = (id, e) => {
+        e===0?  addToCart(id, 1):
+        addToCart(id, e.target.value);
+    };
+    useEffect(()=>{
+        all_products.map((item) => {
+            if (cartItems[item.id] !== 0)
+             handleChange(item.id, 0)
+        })
+},[]) 
 
-}
     let items = all_products.map((item) => {
         if (cartItems[item.id] === 0) return null;
         else
@@ -23,18 +29,24 @@ const handleChange=(e) => {
                             <p> {item.name}</p>
                             <p className="cratItems-quantity">
                                 price per Stk.{" "}
-                                {item.new_price * cartItems[item.id]} $
+                                {item.new_price } $
                             </p>
                             <p> Qty: {cartItems[item.id]}</p>
                             {/* <button onClick={() => addToCart(item.id)}>
                                 {" "}
                                 add item
                             </button> */}
-                            <input type="number" min="0" max="100" onChange={()=>handleChange()}></input>
+                            <input
+                                type="number"
+                                min="1"
+                                max="100"
+                                
+                                onChange={(e) => handleChange(item.id, e)}
+                            ></input>
                         </div>
 
                         <div className="total">
-                            <p> Subtotal ( Items quantity) $</p>
+                            <p> Subtotal :  {item.new_price * cartItems[item.id]} $ $</p>
                         </div>
                     </div>
                 </div>
@@ -71,6 +83,7 @@ const handleChange=(e) => {
             );
     });
     let sum = items.reduce((prev, curr) => prev + curr);
+    console.log({ items });
     return (
         <div className="cart-container">
             <p className="cart-title"> Shopping Cart </p>
