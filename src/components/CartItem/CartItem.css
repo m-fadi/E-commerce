@@ -1,7 +1,12 @@
 .cart-container{
     margin: 20px 10px;
+    display:flex;
+    gap:50px;
+    
+
     
 }
+
 .cart-title{
      margin: 20px 10px;
 font-size: 40px;
@@ -11,7 +16,13 @@ font-weight: 700;
     margin : 50px  50px 0 50;
     display: flex;
     gap:30px;
+    width:70%
     
+    
+}
+.productAndPrices{
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
 }
 .cart-items-format input{
     margin-left : 100px;
@@ -30,4 +41,23 @@ font-weight: 700;
     text-align:end;
     margin-right:100px;
     margin-top:50px;
+}
+.cart-checkOut{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:50px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    width:300px;
+    height:300px;
+
+}
+.cart-checkOut-btn{
+    width:80%;
+    height:30px;
+    background:yellow;
+    font-size: 20px;
+    
+    border-radius: 10px;
+
 }
