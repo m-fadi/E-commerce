@@ -7,6 +7,9 @@
 font-size: 40px;
 font-weight: 700;
 }
-.cart-items-format{
-    margin : 50px 50px
+.cart-item-details{
+    margin : 50px 50px;
+    display: flex;
+    gap:30px;
+    justify-content: center;
 }
