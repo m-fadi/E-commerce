@@ -1,4 +1,4 @@
-.cart-container{
+.cartItems{
     margin: 20px 10px;
     display:flex;
     gap:50px;
@@ -20,7 +20,7 @@ font-weight: 700;
     
     
 }
-.shopping-cart{
+.cart-items-format{
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 width:100%;
 }

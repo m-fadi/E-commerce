@@ -1,17 +1,22 @@
 import React, { useContext, useEffect, useState } from "react";
 import { ShopContext } from "../../Context/ShopContext";
 import "./CartItem.css";
-import remove_icon from "../assest/images/cart_cross_icon.png";
+//import remove_icon from "../";
 
 function CartItem() {
     let itemsPriceArray = [0];
     const { cartItems, all_products, removeProduct, addToCart } =
         useContext(ShopContext);
-    const [inputValue, setInputValue] = useState(0);
+    
     const handleChange = (id, e) => {
         e === 0 ? addToCart(id, 1) : addToCart(id, Number(e.target.value));
     };
-     
+    useEffect(() => {
+        all_products.map((item) => {
+            if (cartItems[item.id] !== 0) handleChange(item.id, 0);
+        });
+    }, []);
+
     let items = all_products.map((item) => {
         if (cartItems[item.id] === 0) return null;
         else {
@@ -59,7 +64,7 @@ function CartItem() {
     console.log({ items });
     return (
         <div className="cart-container">
-            <div className="shopping-cart">
+            <div className="productAndPrices">
                 <p className="cart-title"> Shopping Cart </p>
                 <hr />
                 {sum === 0 && (
