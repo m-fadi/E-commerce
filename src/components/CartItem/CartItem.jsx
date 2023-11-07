@@ -11,12 +11,7 @@ function CartItem() {
     const handleChange = (id, e) => {
         e === 0 ? addToCart(id, 1) : addToCart(id, Number(e.target.value));
     };
-    useEffect(() => {
-        all_products.map((item) => {
-            if (cartItems[item.id] !== 0) handleChange(item.id, 0);
-        });
-    }, []);
-
+    
     let items = all_products.map((item) => {
         if (cartItems[item.id] === 0) return null;
         else {
