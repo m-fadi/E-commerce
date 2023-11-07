@@ -43,9 +43,11 @@ function CartItem() {
                         <input
                             type="number"
                             min="1"
+                           
                             max="100"
                             onChange={(e) => handleChange(item.id, e)}
                         ></input>
+
                         <button
                             className="removeProduct-btn"
                             onClick={() => removeProduct(item.id)}
@@ -62,7 +64,7 @@ function CartItem() {
     console.log({ items });
     return (
         <div className="cart-container">
-            <div className="productAndPrices">
+            <div className="shopping-cart">
                 <p className="cart-title"> Shopping Cart </p>
                 <hr />
                 {sum === 0 && (
