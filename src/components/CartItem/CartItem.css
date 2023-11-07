@@ -20,9 +20,9 @@ font-weight: 700;
     
     
 }
-.productAndPrices{
+.shopping-cart{
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-
+width:100%;
 }
 .cart-items-format input{
     margin-left : 100px;
@@ -30,6 +30,10 @@ font-weight: 700;
     height:30px;
     font-size: 20px;;
     width:100px;
+    cursor: pointer;
+    
+    
+ 
     
 }
 .removeProduct-btn{
@@ -45,10 +49,10 @@ font-weight: 700;
 .cart-checkOut{
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     gap:50px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-    width:300px;
+    width:500px;
     height:300px;
 
 }
@@ -60,3 +64,5 @@ font-weight: 700;
     border-radius: 10px;
 
 }
+
+
