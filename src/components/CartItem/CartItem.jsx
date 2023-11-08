@@ -134,7 +134,7 @@ function CartItem() {
                     <div>{items}</div>
                     <div className="cartItems-down">
                         <div className="cart-total">
-                            <h1> Total Price:</h1>
+                            <h1> Total Price: {totalPrice} $ </h1>
                             <div>
                                 <div className="cart-total-price">
                                     <p>Subtotal</p>
