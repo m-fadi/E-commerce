@@ -74,7 +74,6 @@ hr {
     height: 3px;
     background: #e2e2e2;
     border: 0;
-    
 }
 .cartItems-format-main {
     display: grid;
@@ -96,7 +95,7 @@ hr {
 .cartItems-format input {
     text-align: center;
     margin-right: 5px;
-   
+
     font-size: 16px;
     width: 40px;
     cursor: pointer;
@@ -107,11 +106,13 @@ hr {
     cursor: pointer;
 }
 
-.cartItems-down{
-display: flex;
-margin: 100px 0px;
+.cartItems-down {
+    display: flex;
+    margin: 100px 0px;
 }
-.cart-total{
-    flex:1;
-
+.cart-total {
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
 }
