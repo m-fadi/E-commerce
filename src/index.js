@@ -4,7 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ShopContextProvider from "./Context/ShopContext"
-
+if (module.hot && process.env.NODE_ENV !== "production") {
+    module.hot.accept();
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ShopContextProvider>
