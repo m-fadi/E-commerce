@@ -35,6 +35,8 @@ function CartItem() {
                         <p>{item.new_price} $</p>
                         <input
                             type="number"
+                            min="1"
+                            max="100"
                             value={cartItems[item.id]}
                             onChange={(e) => handleChange(item.id, e)}
                         ></input>
