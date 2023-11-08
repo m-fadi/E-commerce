@@ -5,8 +5,15 @@ import star_dull_icon from "../assest/images/star_dull_icon.png";
 import { ShopContext } from "../../Context/ShopContext";
 
 function DisplayProduct(props) {
+    console.log("{ cartCount }");
     const { addToCart } = useContext(ShopContext);
     const { product } = props;
+    let cartCount=0
+    const handleChange=()=>{
+cartCount++
+console.log({cartCount})
+addToCart(product.id, cartCount);
+    }
 
     return (
         <div className="product-container">
@@ -49,7 +56,7 @@ function DisplayProduct(props) {
                         <div>XXL</div>
                     </div>
                     <button
-                        onClick={() => addToCart(product.id,1)}
+                        onClick={ handleChange}
                         className="add-cart-btn"
                     >
                         ADD TO CART
