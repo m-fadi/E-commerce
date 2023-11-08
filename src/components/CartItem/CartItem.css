@@ -78,9 +78,9 @@ hr {
 }
 .cartItems-format-main {
     display: grid;
-    grid-template-columns: 0.5fr 3fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 3fr 2fr 1fr 1fr 1fr;
     align-items: center;
-    gap: 75px;
+    gap: 115px;
     padding: 20px 0px;
     color: #454545;
     font-size: 18px;
@@ -95,14 +95,23 @@ hr {
 }
 .cartItems-format input {
     text-align: center;
-    margin-right: 10px;
-    height: 30px;
-    font-size: 20px;
-    width: 30%;
+    margin-right: 5px;
+   
+    font-size: 16px;
+    width: 40px;
     cursor: pointer;
 }
 .cart-removeItem {
     width: 15px;
     margin: 0px 40px;
     cursor: pointer;
+}
+
+.cartItems-down{
+display: flex;
+margin: 100px 0px;
+}
+.cart-total{
+    flex:1;
+
 }
