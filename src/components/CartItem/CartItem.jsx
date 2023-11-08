@@ -48,6 +48,7 @@ function CartItem() {
                         />
                     </div>
                     <hr />
+
                 </div>
             );
             // return (
@@ -119,19 +120,49 @@ function CartItem() {
         //     )}
         // </div>
         <div className="cartItems">
-        {sum !== 0 &&<div>
-            <div className="cartItems-format-main">
-                <p>Products</p>
-                <p>Title</p>
-                <p>Price</p>
-                <p>Qty</p>
-                <p>Total</p>
-                <p>Remove</p>
-            </div>
-            <hr />
-            <div>{items}</div>
-             <p>Total Price: {totalPrice} $ </p>
-             </div>}
+            {sum !== 0 && (
+                <div>
+                    <div className="cartItems-format-main">
+                        <p>Products</p>
+                        <p>Title</p>
+                        <p>Price</p>
+                        <p>Qty</p>
+                        <p>Total</p>
+                        <p>Remove</p>
+                    </div>
+                    <hr />
+                    <div>{items}</div>
+                    <div className="cartItems-down">
+                        <div className="cart-total">
+                            <h1> Total Price:</h1>
+                            <div>
+                                <div className="cart-total-price">
+                                    <p>Subtotal</p>
+                                    <p> {totalPrice} $ </p>
+                                </div>
+                                <hr />
+                                <div className="cart-total-price">
+                                    <p>Shipping Fee</p>
+                                    <p>Free</p>
+                                    <hr />
+                                    <div className="cart-total-price">
+                                        <h3>TOtal COst</h3>
+                                        <h3>{0}$</h3>
+                                    </div>
+                                    <button> Proceed to checkout</button>
+                                </div>
+                                <div className="cart-promoCode">
+                                    <p>if you have a promo code, please enter it</p>
+                                    <div className="cart-promoBox">
+                                        <input type="text" placeholder="promo code" />
+                                        <button> Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
