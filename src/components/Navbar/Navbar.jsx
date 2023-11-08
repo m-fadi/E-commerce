@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
 function Navbar() {
     const [menu, setMenu] = useState("shop");
-    const { cartItems } = useContext(ShopContext);
-    console.log('OB:CO',Object.values(cartItems));
+    const { cartItems, itemsCount } = useContext(ShopContext);
+    
     let sum = Object.values(cartItems).reduce((prev, curr) => prev + curr);
-console.log(Number(sum))
+
     return (
         <div className="navbar">
             <div className="nav-logo">
