@@ -6,12 +6,12 @@ import { ShopContext } from "../../Context/ShopContext";
 
 function DisplayProduct(props) {
     console.log("{ cartCount }");
-    const { addToCart } = useContext(ShopContext);
+    const { addToCart, getItemsCount } = useContext(ShopContext);
     const { product } = props;
     let cartCount=0
     const handleChange=()=>{
 cartCount++
-console.log({cartCount})
+
 addToCart(product.id, cartCount);
     }
 
