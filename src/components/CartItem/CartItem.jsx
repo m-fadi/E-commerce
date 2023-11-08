@@ -24,11 +24,11 @@ function CartItem() {
             ];
             totalPrice= itemsPriceArray.reduce((prev, curr) => prev + curr);
             return (
-                <div className="cartItems-format">
+                <div className="cartItems-format cartItems-format-main">
                     <img
                         src={item.image}
                         alt=""
-                        className="cartIcon-product--icon"
+                        className="cartIcon-product-icon"
                     />
                     <p> {item.name}</p>
                     <p>{item.new_price} $</p>
@@ -38,9 +38,10 @@ function CartItem() {
                         max="100"
                         onChange={(e) => handleChange(item.id, e)}
                     ></input>
-                    <p>Price: {item.new_price*cartItems[item.id]} $ </p>
+                    <p>Price: {item.new_price * cartItems[item.id]} $ </p>
                     <img
                         src={remove_icon}
+                        className="cart-removeItem"
                         onClick={() => removeProduct(item.id)}
                         alt=""
                     />
@@ -115,6 +116,7 @@ function CartItem() {
         //     )}
         // </div>
         <div className="cartItems">
+        {sum !== 0 &&<div>
             <div className="cartItems-format-main">
                 <p>Products</p>
                 <p>Title</p>
@@ -125,7 +127,8 @@ function CartItem() {
             </div>
             <hr />
             <div>{items}</div>
-            {sum !== 0 && <p>Total Price: {totalPrice} $ </p>}
+             <p>Total Price: {totalPrice} $ </p>
+             </div>}
         </div>
     );
 }
