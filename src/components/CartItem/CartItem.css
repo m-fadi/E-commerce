@@ -66,3 +66,17 @@ width:100%;
 }
 
  */
+
+ .cartItems{
+margin:100px 170px
+ }
+ .cartItems hr{
+    height: 3px;
+    background:#e2e2e2;
+    border:0;
+ }
+ .cartItems-format-main{
+    display:grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    
+ }
