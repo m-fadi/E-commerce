@@ -26,6 +26,13 @@ const ShopContextProvider = (props) => {
 
 
     }
+    const getItemsCount = (itemId, count) => {
+        let itemsCount = 0;
+        for (const item in cartItems) {
+            if (cartItems[item] > 0) itemsCount += cartItems[item];
+        }
+        return itemsCount;
+    };
     const removeProduct = (itemId) =>
     setCartItems((prev) => ({ ...prev, [itemId]: 0 }));
     const contextValue = {
@@ -33,7 +40,7 @@ const ShopContextProvider = (props) => {
         cartItems,
         addToCart,
         removeProduct,
-        // getItemsCount,
+         getItemsCount,
         // itemsCount
     };
 
