@@ -4,6 +4,7 @@ import "./CartItem.css";
 import remove_icon from "../assest/images/cart_cross_icon.png";
 
 function CartItem() {
+    let totalPrice=0
     let itemsPriceArray = [0];
     const { cartItems, all_products, removeProduct, addToCart } =
         useContext(ShopContext);
@@ -14,15 +15,21 @@ function CartItem() {
     
 
     let items = all_products.map((item) => {
+       
         if (cartItems[item.id] === 0) return null;
         else {
             itemsPriceArray = [
                 ...itemsPriceArray,
                 item.new_price * cartItems[item.id],
             ];
+            totalPrice= itemsPriceArray.reduce((prev, curr) => prev + curr);
             return (
                 <div className="cartItems-format">
-                    <img src={item.image} alt="" className="cartIcon-product--icon" />
+                    <img
+                        src={item.image}
+                        alt=""
+                        className="cartIcon-product--icon"
+                    />
                     <p> {item.name}</p>
                     <p>{item.new_price} $</p>
                     <input
@@ -31,10 +38,7 @@ function CartItem() {
                         max="100"
                         onChange={(e) => handleChange(item.id, e)}
                     ></input>
-                    <p>
-                        Total Price:{" "}
-                        {itemsPriceArray.reduce((prev, curr) => prev + curr)} ${" "}
-                    </p>
+                    <p>Price: {item.new_price*cartItems[item.id]} $ </p>
                     <img
                         src={remove_icon}
                         onClick={() => removeProduct(item.id)}
@@ -120,9 +124,8 @@ function CartItem() {
                 <p>Remove</p>
             </div>
             <hr />
-            <div>
-                {items}
-            </div>
+            <div>{items}</div>
+            {sum !== 0 && <p>Total Price: {totalPrice} $ </p>}
         </div>
     );
 }
