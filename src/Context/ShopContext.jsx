@@ -13,14 +13,18 @@ const getDefaultCart = () => {
 const ShopContextProvider = (props) => {
     
     const [cartItems, setCartItems] = useState(getDefaultCart());
-        console.log({cartItems});
+    const [itemsCount, setItemsCount] = useState(0);
+        
 
     const addToCart = (itemId,value) =>{
       
     setCartItems((prev) => ({ ...prev, [itemId]:  value  }));
-    }
-    const getItemsCount = (itemId,count) =>{
-return  Object.values(cartItems).reduce((prev, curr) => prev + curr);
+    
+//     const getItemsCount = (itemId,count) =>{
+        
+// setItemsCount(prev=>prev+1);
+
+
     }
     const removeProduct = (itemId) =>
     setCartItems((prev) => ({ ...prev, [itemId]: 0 }));
@@ -29,7 +33,8 @@ return  Object.values(cartItems).reduce((prev, curr) => prev + curr);
         cartItems,
         addToCart,
         removeProduct,
-        getItemsCount,
+        // getItemsCount,
+        // itemsCount
     };
 
     return (
