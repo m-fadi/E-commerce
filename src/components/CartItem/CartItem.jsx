@@ -35,8 +35,7 @@ function CartItem() {
                         <p>{item.new_price} $</p>
                         <input
                             type="number"
-                            min="1"
-                            max="100"
+                            value={cartItems[item.id]}
                             onChange={(e) => handleChange(item.id, e)}
                         ></input>
                         <p>Price: {item.new_price * cartItems[item.id]} $ </p>
@@ -134,7 +133,7 @@ function CartItem() {
                     <div>{items}</div>
                     <div className="cartItems-down">
                         <div className="cart-total">
-                            <h1> Total Price: {totalPrice} $ </h1>
+                            <h2> Total Price: {totalPrice} $ </h2>
                             <div>
                                 <div className="cart-total-price">
                                     <p>Subtotal</p>
