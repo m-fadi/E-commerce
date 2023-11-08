@@ -144,20 +144,20 @@ function CartItem() {
                                 <div className="cart-total-price">
                                     <p>Shipping Fee</p>
                                     <p>Free</p>
-                                    <hr />
-                                    <div className="cart-total-price">
-                                        <h3>TOtal COst</h3>
-                                        <h3>{0}$</h3>
-                                    </div>
-                                    <button> Proceed to checkout</button>
                                 </div>
-                                <div className="cart-promoCode">
-                                    <p>if you have a promo code, please enter it</p>
-                                    <div className="cart-promoBox">
-                                        <input type="text" placeholder="promo code" />
-                                        <button> Submit</button>
-                                    </div>
+                                <hr />
+                                <div className="cart-total-price">
+                                    <h3>Total cost</h3>
+                                    <h3>{0}$</h3>
                                 </div>
+                            </div>
+                            <button> Proceed to checkout</button>
+                        </div>
+                        <div className="cart-promoCode">
+                            <p>if you have a promo code, please enter it</p>
+                            <div className="cart-promo-box">
+                                <input type="text" placeholder="promo code" />
+                                <button> Submit</button>
                             </div>
                         </div>
                     </div>
